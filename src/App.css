@@ -1,20 +1,9 @@
 .App {
   text-align: center;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #324d31;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,16 +12,69 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  min-height: 600px;
+  border: 1px solid rgb(3, 3, 3);
+}
+.containerLeft{
+  width: 50%;
+  min-height: 100%;
+  text-align: center;
+  border-right: 1px solid rgb(3, 3, 3);
+}
+.containerRight{
+  width: 50%;
+  min-height: 100%;
+  text-align: center;
+  border-left: 1px solid rgb(3, 3, 3);
+}
+button {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  background-color: rgb(77, 88, 79);
+  border: none;
+  box-shadow: none;
+  width: 10%;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+}
+button:hover{
+  background-color: rgba(149, 214, 146, 0.223); 
+  border: 0.5px solid rgb(10, 10, 10);
+}
+.karve, .avis {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.karve {
+  border: 5px solid rgb(19, 185, 69);
+  color: rgb(147, 209, 105);
+}
+
+.avis {
+  border: 5px solid rgb(6, 41, 134);
+  border-radius: 50%;
+  color: rgb(48, 113, 233);
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: crimson;
+font-size: larger;
 }
